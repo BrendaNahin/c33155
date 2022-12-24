@@ -9,73 +9,124 @@
     <title>CONTACTO</title>
 </head>
 
-<body>
+<body class="body">
 
     <header>
 
+        <!-- LOGO
+         -->
+        <img class="logo" src="../assets/image/LOGO1.png" alt="logo">
+
         <!-- LINKS DE NAVEGACION  -->
 
-        <nav>
-            <ul>
+        <nav class="navbar">
 
-                <a href="../index.html">
-                    <li>VOLVER AL INICIO</li>
-                </a>
-                <a href="./sobrenos.html">
-                    <li>SOBRE NOSOTROS</li>
-                </a>
-                <a href="./Catalogo.html">
-                    <li>CATALOGO</li>
-                </a>
-                <a href="./Politicas.html">
-                    <li>POLITICAS</li>
-                </a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="../index.html">Volver a inicio</a>
+                </li>
+
+                <li class="menu__item">
+
+                    <a href="./sobrenos.html"> Sonbre nosotros</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="./Catalogo.html">Catalogo</a>
+                </li>
+                <li class="menu__item active">
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="./Politicas.html">Politicas</a>
+                </li>
+
             </ul>
         </nav>
 
     </header>
 
     <main>
-        <!-- FORMULARIO  -->
 
-        <form action="" method="post" enctype="text/plain">
+        <!-- FORMULARIO NUEVO -->
+        <div class="contenedor">
 
-            <h1>CONTACTANOS</h1>
+            <div class="formulario2">
 
-
-
-            <fieldset>
-                <legend>DEJANOS TUS DATOS</legend>
-
-
-                <div>
-                    <label for="nombre">ingresa tu nombre</label>
-                    <input type="text" name="" id="nombre">
-                </div>
-                <div>
-                    <label for="correo">ingresa tu correo</label>
-                    <input type="email" name="" id="correo">
+                <div class="datos">
+                    <h2>CONTACTANOS</h2>
                 </div>
 
-                <!-- IMAGEN LOGO  -->
-                <img src="../assets/image/LOGO1.png" alt="" width="200" height="50">
+                <section>
+                    <div>
+                        <img class="insta" src="../assets/image/IG.png" alt="LOGO INSTAGRAM">
+                        <p>Buscamos como OMG.SOY.FRIKI </p>
 
-                <div>
-                    <textarea name="" id="" placeholder="Dejanos tu mensaje" cols="30" rows="10"></textarea>
-                </div>
-                <!-- BOTONES  -->
-                <input type="submit" value="Enviar">
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img class="wsp" src="../assets/image/wsp.png" alt="WSP">
+                        <p>Escribinos al 2617096644</p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img class="ubi" src="../assets/image/ubi.png" alt="ubi">
+                        <p>Encontranos en la ciudad de Mendoza</p>
+                    </div>
+                </section>
 
-            </fieldset>
+
+
+            </div>
+
+
+            <div class="formulario1">
+                <form action="" method="post" enctype="text/plain">
+
+                    <div class="contacto">
+                        <h2>ESCRIBINOS</h2>
+                    </div>
+                    <fieldset>
+                        <legend>DEJANOS TUS DATOS</legend>
+
+
+                        <div>
+                            <label for="nombre">Ingresa tu nombre</label>
+                            <input type="text" name="" id="nombre" required>
+                        </div>
+                        <div>
+                            <label for="email">Ingresa tu correo</label>
+                            <input type="email" name="" id="correo" required>
+                        </div>
+                        <div class="placeholder">
+                            <textarea name="" id="" placeholder="Dejanos tu mensaje" cols="65" rows="10"></textarea>
+                        </div>
+                        <!-- BOTONES  -->
+                        <input type="submit" value="Enviar">
+
+
+                    </fieldset>
+            </div>
+        </div>
+
+        <!-- IMAGEN LOGO2 
+        <div> 
+            <img class="logo2" src="../assets/image/LOGO2.png" alt="Logo2">
+        </div> -->
 
     </main>
 
     <footer>
+        <div class="piedepag">
+            <p> ¿Te gustaria pertenecer a nuestra frikycomunity? Envianos un mail y enterate! omgsomosfriki@gmail.com
+            </p>
+        </div>
 
     </footer>
 
-
- <p>  ¿Te gustaria pertenecer a nuestra frikycomunity? Envianos un mail y enterate! omgsomosfriki@gmail.com </p>
 
     </form>
 

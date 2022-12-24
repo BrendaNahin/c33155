@@ -8,84 +8,89 @@
     <title>MI SITIO</title>
     <link rel="stylesheet" href="./css/style.css">
 
+
+
 </head>
 
-<body>
+<body class="body">
     <header>
-
-
-
-        <!-- TITULO -->
-
-        
-            <h1>BIENVENIDOS FRIKIS</h1>
-      
-
+        <!-- LOGO OMG -->
+        <img class="logo" src="./assets/image/LOGO1.png" alt="Logo">
 
         <!-- LINKS DE NAVEGACION -->
-        <nav>
-            <ul>
-                <a href="./pages/Sobrenos.html">
-                    <li>Sobre nosotros</li>
-                </a>
-                <a href="./pages/Catalogo.html">
-                    <li>Catalogo</li>
-                </a>
-                <a href="./pages/contacto.html">
-                    <li>contacto</li>
-                </a>
-                <a href="./pages/Politicas.html">
-                    <li>Politicas</li>
-                </a>
 
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu__item active">
+                    <a href="../index.html">Inicio </a>
+                </li>
+                <li class="menu__item">
+                    <a href="./pages/Sobrenos.html"> Sobre nosotros</a>
+                </li>
 
+                <li class="menu__item">
+                    <a href="./pages/Catalogo.html"> Catalogo </a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="./pages/contacto.html"> Contacto </a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="./pages/Politicas.html"> politicas</a>
+                </li>
             </ul>
         </nav>
-
-
-
-
     </header>
 
     <main>
-        <section id="noticias">
-            <div>
-            <!--    IMAGEN LOGO -->
-                <img src="./assets/image/LOGO1.png" alt="LOGO OMG" />
-
+        <!-- SOBRE LA IMAGEN -->
+        <section class="imgppal">
+            <h2>BIENVENIDOS FRIKIS</h2>
+            <p>FRIKI: es un término coloquial que se utiliza para referirse a una persona cuyas aficiones,
+                comportamiento o vestuario son inusuales</p>
+        </section>
+        <!-- CARTAS -->
+        <section class="cards">
+            <!-- Indumentaria -->
+            <div class="card">
+                <img class="card__imagen" src="./assets/image/OIP.jpg" alt="Indumentaria">
+                <div class="info">
+                    <h4 class="card__titulo">Indumentaria Femenina</h4>
+                    <p class="card__texto"> Indumentaria masculina a partir del 2024 </p>
+                    <button class="card__boton">ver mas</button>
+                </div>
 
             </div>
-            <button>BOTON</button>
-        </section>
+            <!-- HOME DECO -->
+            <div class="card">
+                <img class="card__imagen" src="./assets/image/OIP (1).jpg" alt="Home Deco">
+                <div class="info">
+                    <h4 class="card__titulo">Decora tu hogar</h4>
+                    <p class="card__texto"> Vinilos </p>
+                    <button class="card__boton">ver mas</button>
+                </div>
 
-        <section id="novedades">
-            <div>
-                <img src="./assets/image/LOGO1.png" alt="LOGO OMG" />
-
+            </div>
+            <!-- FUNKO POP -->
+            <div class="card">
+                <img class="card__imagen" src="./assets/image/funko.jpg" alt="Funko pops">
+                <div class="info">
+                    <h4 class="card__titulo">Funko Pop</h4>
+                    <p class="card__texto">Para verdaderos coleccionistas</p>
+                    <button class="card__boton">ver mas</button>
+                </div>
 
             </div>
 
-            <button>BOTON</button>
         </section>
-
-
-        <!-- CAJAS PRUEBA -->
-        <!--   <div id="cajapadre">
-            <div id="cajauno">CAJA UNO</div>
-
-            <div id="cajados">CAJA DOS</div>
-        </div>
- -->
-
-
-
-
-        </section>
-
     </main>
 
-    <footer>
-        <h1>PAGINA EN REPARACION</h1>
+
+
+    <footer class="pie">
+        <p>Todos los derechos reservados</p>
+        <p>OMG SOY FRIKI</p>
 
     </footer>
 
