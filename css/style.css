@@ -1,2 +1,99 @@
-li {
-  background-color: red; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  width: 100%;
+  background-color: #bc2e2e;
+  display: flex;
+  grid-gap: 50px; }
+  header .logo {
+    width: 200px; }
+  header nav {
+    display: flex;
+    align-items: center; }
+  header .menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+    align-items: center; }
+  header .menu__item a {
+    color: white;
+    text-decoration: none; }
+  header .menu__item.active a {
+    text-decoration: underline double; }
+
+main section {
+  height: 80vh;
+  background-image: url(../assets/image/47E.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 200px; }
+
+main h2 {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.717);
+  padding-inline: 15px; }
+
+main p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.717);
+  text-align: center; }
+
+main section {
+  display: flex;
+  padding: 60px;
+  gap: 30px; }
+
+main div {
+  background-color: #bc2e2e;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all .3s; }
+  main div img {
+    max-width: 100%; }
+
+main div {
+  padding: 0% 20% 20% 20%; }
+
+main .cards {
+  display: flex;
+  padding: 60px;
+  gap: 30px; }
+
+.cards main:hover {
+  transform: scale(1.1) translateY(-40px);
+  box-shadow: #555bff 0px 0px 0px 3px, #1fc11b 0px 0px 0px 6px, #ffd913 0px 0px 0px 9px, #ff9c55 0px 0px 0px 12px, #ff5555 0px 0px 0px 15px; }
+
+main .card {
+  background-color: #bc2e2e;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all .3s; }
+
+main .info {
+  padding: 0% 20% 20% 20%; }
+
+main .card__imagen {
+  max-width: 100%; }
+
+footer {
+  background-color: #bc2e2e;
+  color: white;
+  padding-block: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around; }
