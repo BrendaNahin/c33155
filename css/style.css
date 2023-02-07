@@ -3,14 +3,14 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* INDEX */
 header {
-  width: 100%;
   background-color: #bc2e2e;
   display: flex;
   grid-gap: 50px; }
   header .logo {
     width: 200px; }
-  header nav {
+  header .navbar {
     display: flex;
     align-items: center; }
   header .menu {
@@ -25,34 +25,56 @@ header {
   header .menu__item.active a {
     text-decoration: underline double; }
 
-main section {
-  height: 80vh;
-  background-image: url(../assets/image/47E.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-inline: 200px; }
+.iframe {
+  min-height: 100vh;
+  position: relative; }
+  .iframe h2 {
+    padding-top: 350px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2; }
+  .iframe p {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2; }
 
-main h2 {
-  color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.717);
-  padding-inline: 15px; }
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
-main p {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.717);
-  text-align: center; }
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #070303;
+  opacity: 0.5;
+  mix-blend-mode: overlay; }
 
-main section {
+/* CARDS */
+.cards {
   display: flex;
   padding: 60px;
   gap: 30px; }
 
-main div {
+.cards :hover {
+  transform: scale(1) translateY(-30px);
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  transition: transform 0.5s; }
+
+.card {
   background-color: #bc2e2e;
   border-radius: 30px;
   overflow: hidden;
@@ -60,40 +82,70 @@ main div {
   flex-direction: column;
   gap: 20px;
   transition: all .3s; }
-  main div img {
-    max-width: 100%; }
 
-main div {
+.info {
   padding: 0% 20% 20% 20%; }
 
-main .cards {
-  display: flex;
-  padding: 60px;
-  gap: 30px; }
-
-.cards main:hover {
-  transform: scale(1.1) translateY(-40px);
-  box-shadow: #555bff 0px 0px 0px 3px, #1fc11b 0px 0px 0px 6px, #ffd913 0px 0px 0px 9px, #ff9c55 0px 0px 0px 12px, #ff5555 0px 0px 0px 15px; }
-
-main .card {
-  background-color: #bc2e2e;
-  border-radius: 30px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  transition: all .3s; }
-
-main .info {
-  padding: 0% 20% 20% 20%; }
-
-main .card__imagen {
+.card__imagen {
   max-width: 100%; }
 
-footer {
+/* FOOTER */
+.boton {
+  text-decoration: none;
+  border: no; }
+
+.footersobrenos {
+  color: white;
+  padding-block: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 200px;
+  height: 50px;
+  background-color: #bc2e2e;
+  grid-gap: 50px; }
+
+.footerpoliticas {
   background-color: #bc2e2e;
   color: white;
   padding-block: 20px;
   text-align: center;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  font-family: "Courier New", Courier, monospace; }
+
+.footercontacto {
+  color: white;
+  padding-block: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 200px;
+  height: 50px;
+  background-color: #bc2e2e;
+  grid-gap: 50px; }
+
+.footercatalogo {
+  background-color: #bc2e2e;
+  color: white;
+  padding-block: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Courier New", Courier, monospace; }
+
+.footerinicio {
+  color: white;
+  padding-block: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 200px;
+  height: 50px;
+  background-color: #bc2e2e;
+  grid-gap: 50px; }
+
+/* DESKTOP FIRST */
